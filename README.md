@@ -1,1 +1,1 @@
-
+I have added my Power BI and Tableau projects along with their respective Excel files used for analysis. Each project includes interactive dashboards built from real or sample datasets, showcasing data cleaning, modeling, and visualization skills. These files demonstrate my ability to turn raw data into meaningful insights using charts, KPIs, filters, and slicers. This collection reflects my practical experience in data storytelling and dashboard design.
