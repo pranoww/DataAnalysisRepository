@@ -1,0 +1,3181 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.25.0114.1153                               -->
+<workbook original-version='18.1' source-build='2024.3.3 (20243.25.0114.1153)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource hasconnection='false' inline='true' name='Parameters' version='18.1'>
+      <aliases enabled='yes' />
+      <column caption='stats' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;s attack&quot;'>
+        <calculation class='tableau' formula='&quot;s attack&quot;' />
+        <members>
+          <member value='&quot;attack&quot;' />
+          <member value='&quot;defense&quot;' />
+          <member value='&quot;s attack&quot;' />
+          <member value='&quot;s defense&quot;' />
+          <member value='&quot;height&quot;' />
+          <member value='&quot;hp&quot;' />
+          <member value='&quot;speed&quot;' />
+          <member value='&quot;weight&quot;' />
+        </members>
+      </column>
+    </datasource>
+    <datasource caption='pokedex' inline='true' name='federated.1rom35m084lzet1chyr7t05vwz3v' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='pokedex' name='textscan.1wlwe8k05k6bl01csm24819uljmk'>
+            <connection class='textscan' directory='C:/Users/prana/OneDrive/Desktop/datasets' filename='pokedex.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1wlwe8k05k6bl01csm24819uljmk' name='pokedex.csv' table='[pokedex#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='string' name='name' ordinal='1' />
+            <column datatype='integer' name='height' ordinal='2' />
+            <column datatype='integer' name='weight' ordinal='3' />
+            <column datatype='integer' name='hp' ordinal='4' />
+            <column datatype='integer' name='attack' ordinal='5' />
+            <column datatype='integer' name='defense' ordinal='6' />
+            <column datatype='integer' name='s_attack' ordinal='7' />
+            <column datatype='integer' name='s_defense' ordinal='8' />
+            <column datatype='integer' name='speed' ordinal='9' />
+            <column datatype='string' name='type' ordinal='10' />
+            <column datatype='integer' name='evo_set' ordinal='11' />
+            <column datatype='string' name='info' ordinal='12' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[name]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[height]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>height</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>weight</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[weight]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>weight</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hp</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[hp]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>hp</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>attack</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[attack]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>attack</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>defense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[defense]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>defense</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s_attack</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[s_attack]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>s_attack</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>s_defense</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[s_defense]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>s_defense</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>speed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[speed]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>speed</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[type]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>type</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>evo_set</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[evo_set]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>evo_set</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>info</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[info]</local-name>
+            <parent-name>[pokedex.csv]</parent-name>
+            <remote-alias>info</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='stats' datatype='integer' name='[Calculation_937030208274366464]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;attack&quot; THEN [attack]&#13;&#10;WHEN &quot;defense&quot; THEN [defense]&#13;&#10;WHEN &quot;s attack&quot; THEN [s_attack]&#13;&#10;WHEN &quot;s defense&quot; THEN [s_defense]&#13;&#10;WHEN &quot;height&quot; THEN [height]&#13;&#10;WHEN &quot;hp&quot; THEN [hp]&#13;&#10;WHEN &quot;speed&quot; THEN [speed]&#13;&#10;WHEN &quot;weight&quot; THEN [weight]&#13;&#10;END' />
+      </column>
+      <column caption='pokedex.csv' datatype='table' name='[__tableau_internal_object_id__].[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]' role='measure' type='quantitative' />
+      <column caption='Attack' datatype='integer' name='[attack]' role='measure' type='quantitative' />
+      <column caption='Defense' datatype='integer' name='[defense]' role='measure' type='quantitative' />
+      <column caption='Evo Set' datatype='integer' name='[evo_set]' role='measure' type='quantitative' />
+      <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+      <column caption='Hp' datatype='integer' name='[hp]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Info' datatype='string' name='[info]' role='dimension' type='nominal' />
+      <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+      <column caption='S Attack' datatype='integer' name='[s_attack]' role='measure' type='quantitative' />
+      <column caption='S Defense' datatype='integer' name='[s_defense]' role='measure' type='quantitative' />
+      <column caption='Speed' datatype='integer' name='[speed]' role='measure' type='quantitative' />
+      <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+      <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+      <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/prana/AppData/Local/Temp/TableauTemp/#TableauTemp_0ctpfwy1djs1dg1b4zu210z2ufna.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='05/17/2025 07:55:24 AM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1025</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1025</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>height</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>height</remote-alias>
+              <ordinal>2</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>54</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>weight</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[weight]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>weight</remote-alias>
+              <ordinal>3</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>480</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hp</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[hp]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hp</remote-alias>
+              <ordinal>4</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>107</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>attack</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[attack]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>attack</remote-alias>
+              <ordinal>5</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>115</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>defense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[defense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>defense</remote-alias>
+              <ordinal>6</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>106</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s_attack</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[s_attack]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s_attack</remote-alias>
+              <ordinal>7</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>112</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>s_defense</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[s_defense]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>s_defense</remote-alias>
+              <ordinal>8</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>100</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>speed</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[speed]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>speed</remote-alias>
+              <ordinal>9</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>117</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>type</remote-alias>
+              <ordinal>10</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>201</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>evo_set</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[evo_set]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>evo_set</remote-alias>
+              <ordinal>11</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>537</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>info</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[info]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>info</remote-alias>
+              <ordinal>12</ordinal>
+              <family>pokedex.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1025</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;{bug,ghost}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{dark}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{electric,ice}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{fire,bug}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{ghost,dark}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{grass,psychic}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{ice,water}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{poison,normal}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{rock,flying}&quot;</bucket>
+            </map>
+            <map to='#499894'>
+              <bucket>&quot;{water,dark}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{bug,fighting}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{dark,ghost}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{dragon}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{fire,ground}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{fire,water}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{grass,fighting}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{ground,rock}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{poison,dark}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{psychic}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{steel,flying}&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;{water,rock}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{dark,normal}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{electric,fighting}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{fighting,electric}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{fighting,poison}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{flying,fighting}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{grass,ground}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{ice,flying}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{poison,fire}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{steel,fighting}&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;{steel,psychic}&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;{fighting,dragon}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{bug,poison}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{bug,steel}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{electric}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{fire,flying}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{ghost,flying}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{ground,dragon}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{normal,fighting}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{psychic,fairy}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{rock,poison}&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;{water,fighting}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{bug,grass}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{dragon,fighting}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{electric,normal}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{fire,dark}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{ghost,dragon}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{grass,steel}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{ice}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{poison,psychic}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{rock,grass}&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;{water,dragon}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{bug,fairy}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{dark,poison}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{electric,flying}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{fighting,psychic}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{flying,steel}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{grass,ice}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{ice,ghost}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{poison,flying}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{rock,fairy}&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;{steel,rock}&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;{rock,dark}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{dark,fire}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{dragon,psychic}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{fighting,dark}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{fire,rock}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{grass,dragon}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{normal,psychic}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{normal}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{psychic,normal}&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;{water,poison}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{bug,dark}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{dark,grass}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{electric,dark}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{fighting,flying}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{fire}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{grass,fire}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{ground,steel}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{poison,dragon}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{rock,bug}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{steel,ghost}&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;{water,steel}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{dark,fairy}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{dragon,ice}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{fairy,steel}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{fire,poison}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{ghost}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{ground,ghost}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{ground,normal}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{psychic,ghost}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{rock}&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;{water,ground}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{bug,fire}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{dark,psychic}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{electric,ghost}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{fighting,steel}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{flying,water}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{grass,normal}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{ice,ground}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{poison,ghost}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{rock,fighting}&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;{steel}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{bug,water}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{dragon,flying}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{fairy,fighting}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{ghost,grass}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{ground,electric}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{normal,flying}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{psychic,fighting}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{rock,electric}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{rock,psychic}&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;{water,flying}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{bug,psychic}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{bug}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{dragon,ghost}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{fairy,flying}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{ghost,ground}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{ground,fighting}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{normal,grass}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{psychic,fire}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{rock,steel}&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;{water,ghost}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{dark,fighting}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{dragon,normal}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{fairy}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{fire,psychic}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{grass,dark}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{ground,grass}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{normal,water}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{psychic,grass}&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;{water,ice}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{dark,flying}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{dragon,water}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{fire,ghost}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{fire,steel}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{grass,fairy}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{ground,psychic}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{poison,bug}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{steel,dragon}&quot;</bucket>
+            </map>
+            <map to='#d7b5a6'>
+              <bucket>&quot;{water,psychic}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{dragon,electric}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{dragon,fire}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{electric,poison}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{fire,dragon}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{ghost,fairy}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{grass}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{normal,dragon}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{poison,water}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{rock,ground}&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;{water,electric}&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;{fighting,ice}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{bug,flying}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{dark,steel}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{electric,ground}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{fighting}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{flying}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{grass,poison}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{ice,psychic}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{poison,ground}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{rock,fire}&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;{water,bug}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{dark,ground}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{dragon,dark}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{electric,dragon}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{fighting,ghost}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{flying,dark}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{grass,flying}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{ground}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{poison,fairy}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{steel,fairy}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{steel,ground}&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;{water}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{dark,dragon}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{dragon,ground}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{fairy,psychic}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{ghost,poison}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{ground,flying}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{normal,ground}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{psychic,flying}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{rock,water}&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;{water,grass}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{bug,ground}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{bug,rock}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{electric,steel}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{fire,fighting}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{ghost,fire}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{ground,dark}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{normal,fairy}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{poison}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{rock,ice}&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;{water,fairy}&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;{psychic,steel}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{bug,electric}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{dark,ice}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{electric,fairy}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{fire,normal}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{flying,dragon}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{grass,ghost}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{ice,bug}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{poison,fighting}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{rock,dragon}&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;{steel,poison}&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='stats' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;s attack&quot;'>
+          <calculation class='tableau' formula='&quot;s attack&quot;' />
+        </column>
+      </datasource-dependencies>
+      <object-graph>
+        <objects>
+          <object caption='pokedex.csv' id='pokedex.csv_02BD855A22A342AA8CFE0E2B229B7C98'>
+            <properties context=''>
+              <relation connection='textscan.1wlwe8k05k6bl01csm24819uljmk' name='pokedex.csv' table='[pokedex#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='string' name='name' ordinal='1' />
+                  <column datatype='integer' name='height' ordinal='2' />
+                  <column datatype='integer' name='weight' ordinal='3' />
+                  <column datatype='integer' name='hp' ordinal='4' />
+                  <column datatype='integer' name='attack' ordinal='5' />
+                  <column datatype='integer' name='defense' ordinal='6' />
+                  <column datatype='integer' name='s_attack' ordinal='7' />
+                  <column datatype='integer' name='s_defense' ordinal='8' />
+                  <column datatype='integer' name='speed' ordinal='9' />
+                  <column datatype='string' name='type' ordinal='10' />
+                  <column datatype='integer' name='evo_set' ordinal='11' />
+                  <column datatype='string' name='info' ordinal='12' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='average height'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>average height</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column-instance column='[height]' derivation='Avg' name='[avg:height:qk]' pivot='key' type='quantitative' />
+            <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:height:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{BC956D38-20F6-4BDC-A079-67D8055151BE}' />
+    </worksheet>
+    <worksheet name='average weight'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>weight</run>
+            <run>Æ&#10;&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column-instance column='[weight]' derivation='CountD' name='[ctd:weight:qk]' pivot='key' type='quantitative' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:weight:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{3BE96D96-1541-4AFE-B74C-E45701F3021C}' />
+    </worksheet>
+    <worksheet name='pokemons by their everything idk'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>pokemons by their stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='stats' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;s attack&quot;'>
+              <calculation class='tableau' formula='&quot;s attack&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column caption='stats' datatype='integer' name='[Calculation_937030208274366464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;attack&quot; THEN [attack]&#13;&#10;WHEN &quot;defense&quot; THEN [defense]&#13;&#10;WHEN &quot;s attack&quot; THEN [s_attack]&#13;&#10;WHEN &quot;s defense&quot; THEN [s_defense]&#13;&#10;WHEN &quot;height&quot; THEN [height]&#13;&#10;WHEN &quot;hp&quot; THEN [hp]&#13;&#10;WHEN &quot;speed&quot; THEN [speed]&#13;&#10;WHEN &quot;weight&quot; THEN [weight]&#13;&#10;END' />
+            </column>
+            <column caption='Attack' datatype='integer' name='[attack]' role='measure' type='quantitative' />
+            <column caption='Defense' datatype='integer' name='[defense]' role='measure' type='quantitative' />
+            <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+            <column caption='Hp' datatype='integer' name='[hp]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column caption='S Attack' datatype='integer' name='[s_attack]' role='measure' type='quantitative' />
+            <column caption='S Defense' datatype='integer' name='[s_defense]' role='measure' type='quantitative' />
+            <column caption='Speed' datatype='integer' name='[speed]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_937030208274366464]' derivation='Sum' name='[sum:Calculation_937030208274366464:qk]' pivot='key' type='quantitative' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:Calculation_937030208274366464:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#f4631e' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</rows>
+        <cols>[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:Calculation_937030208274366464:qk]</cols>
+      </table>
+      <simple-id uuid='{067F2D4A-D569-472E-9113-882933013199}' />
+    </worksheet>
+    <worksheet name='top 10 pokemons by speed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>top 10 pokemons by speed</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='stats' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;s attack&quot;'>
+              <calculation class='tableau' formula='&quot;s attack&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column caption='stats' datatype='integer' name='[Calculation_937030208274366464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;attack&quot; THEN [attack]&#13;&#10;WHEN &quot;defense&quot; THEN [defense]&#13;&#10;WHEN &quot;s attack&quot; THEN [s_attack]&#13;&#10;WHEN &quot;s defense&quot; THEN [s_defense]&#13;&#10;WHEN &quot;height&quot; THEN [height]&#13;&#10;WHEN &quot;hp&quot; THEN [hp]&#13;&#10;WHEN &quot;speed&quot; THEN [speed]&#13;&#10;WHEN &quot;weight&quot; THEN [weight]&#13;&#10;END' />
+            </column>
+            <column caption='Attack' datatype='integer' name='[attack]' role='measure' type='quantitative' />
+            <column caption='Defense' datatype='integer' name='[defense]' role='measure' type='quantitative' />
+            <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+            <column caption='Hp' datatype='integer' name='[hp]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='S Attack' datatype='integer' name='[s_attack]' role='measure' type='quantitative' />
+            <column caption='S Defense' datatype='integer' name='[s_defense]' role='measure' type='quantitative' />
+            <column caption='Speed' datatype='integer' name='[speed]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_937030208274366464]' derivation='Sum' name='[sum:Calculation_937030208274366464:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[speed]' derivation='Sum' name='[sum:speed:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Calculation_937030208274366464])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:Calculation_937030208274366464:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:speed:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:speed:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e2dc</color>
+                <color>#f1d4c7</color>
+                <color>#f1c6b2</color>
+                <color>#f2b89d</color>
+                <color>#f2aa88</color>
+                <color>#f29c73</color>
+                <color>#f38d5d</color>
+                <color>#f37f48</color>
+                <color>#f37133</color>
+                <color>#f4631e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-color' value='#ff9f00' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</rows>
+        <cols>[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:speed:qk]</cols>
+      </table>
+      <simple-id uuid='{7636B2F4-A365-42E0-BF58-51038F4C8EBD}' />
+    </worksheet>
+    <worksheet name='top 10 pokemons by stop 10 pokemons by weightpeed (2)'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>top 10 pokemons by weight</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Speed' datatype='integer' name='[speed]' role='measure' type='quantitative' />
+            <column-instance column='[weight]' derivation='Sum' name='[sum:weight:qk]' pivot='key' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([speed])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:name:nk]' user:ui-manual-selection='true' user:ui-manual-selection-all-when-empty='true' user:ui-manual-selection-is-empty='true' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:weight:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:weight:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:weight:qk]' num-steps='5' reverse='true' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e2dc</color>
+                <color>#f1d4c7</color>
+                <color>#f1c6b2</color>
+                <color>#f2b89d</color>
+                <color>#f2aa88</color>
+                <color>#f29c73</color>
+                <color>#f38d5d</color>
+                <color>#f37f48</color>
+                <color>#f37133</color>
+                <color>#f4631e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:weight:qk]' />
+              <text column='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:weight:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk] / [federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{24A9D4EB-15F4-4C5E-B9CC-1E8FDAE64922}' />
+    </worksheet>
+    <worksheet name='top 10 types of pokemon by stats'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>top 10 types of pokemon by stats</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+            <datasource name='Parameters' />
+          </datasources>
+          <datasource-dependencies datasource='Parameters'>
+            <column caption='stats' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;s attack&quot;'>
+              <calculation class='tableau' formula='&quot;s attack&quot;' />
+            </column>
+          </datasource-dependencies>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column caption='stats' datatype='integer' name='[Calculation_937030208274366464]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='CASE [Parameters].[Parameter 1]&#13;&#10;WHEN &quot;attack&quot; THEN [attack]&#13;&#10;WHEN &quot;defense&quot; THEN [defense]&#13;&#10;WHEN &quot;s attack&quot; THEN [s_attack]&#13;&#10;WHEN &quot;s defense&quot; THEN [s_defense]&#13;&#10;WHEN &quot;height&quot; THEN [height]&#13;&#10;WHEN &quot;hp&quot; THEN [hp]&#13;&#10;WHEN &quot;speed&quot; THEN [speed]&#13;&#10;WHEN &quot;weight&quot; THEN [weight]&#13;&#10;END' />
+            </column>
+            <column caption='Attack' datatype='integer' name='[attack]' role='measure' type='quantitative' />
+            <column-instance column='[Calculation_937030208274366464]' derivation='Avg' name='[avg:Calculation_937030208274366464:qk]' pivot='key' type='quantitative' />
+            <column caption='Defense' datatype='integer' name='[defense]' role='measure' type='quantitative' />
+            <column caption='Height' datatype='integer' name='[height]' role='measure' type='quantitative' />
+            <column caption='Hp' datatype='integer' name='[hp]' role='measure' type='quantitative' />
+            <column caption='Name' datatype='string' name='[name]' role='dimension' type='nominal' />
+            <column-instance column='[name]' derivation='None' name='[none:name:nk]' pivot='key' type='nominal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='S Attack' datatype='integer' name='[s_attack]' role='measure' type='quantitative' />
+            <column caption='S Defense' datatype='integer' name='[s_defense]' role='measure' type='quantitative' />
+            <column caption='Speed' datatype='integer' name='[speed]' role='measure' type='quantitative' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+            <column caption='Weight' datatype='integer' name='[weight]' role='measure' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='AVG([Calculation_937030208274366464])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:type:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]' direction='DESC' using='[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:Calculation_937030208274366464:qk]' />
+          <slices>
+            <column>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:Calculation_937030208274366464:qk]' scope='rows' value='' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:Calculation_937030208274366464:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+            <encoding attr='color' field='[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:Calculation_937030208274366464:qk]' type='custom-interpolated'>
+              <color-palette custom='true' name='' type='ordered-sequential'>
+                <color>#f1f1f1</color>
+                <color>#f1e2dc</color>
+                <color>#f1d4c7</color>
+                <color>#f1c6b2</color>
+                <color>#f2b89d</color>
+                <color>#f2aa88</color>
+                <color>#f29c73</color>
+                <color>#f38d5d</color>
+                <color>#f37f48</color>
+                <color>#f37133</color>
+                <color>#f4631e</color>
+              </color-palette>
+            </encoding>
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]' />
+              <lod column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:Calculation_937030208274366464:qk]</rows>
+        <cols>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</cols>
+      </table>
+      <simple-id uuid='{69B2E367-DBA7-4872-8A29-9FF71F5EF18D}' />
+    </worksheet>
+    <worksheet name='total pokemon'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>total pokemons</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{E20EB345-236C-4478-A7D6-0F6813628331}' />
+    </worksheet>
+    <worksheet name='types of pokemon and their count'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontname='Sitka Text'>types of pokemon and their count</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='pokedex' name='federated.1rom35m084lzet1chyr7t05vwz3v' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1rom35m084lzet1chyr7t05vwz3v'>
+            <column-instance column='[id]' derivation='CountD' name='[ctd:id:qk]' pivot='key' type='quantitative' />
+            <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+            <column-instance column='[type]' derivation='None' name='[none:type:nk]' pivot='key' type='nominal' />
+            <column caption='Type' datatype='string' name='[type]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]' included-values='in-range' />
+          <filter class='categorical' column='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]'>
+            <groupfilter function='level-members' level='[none:type:nk]' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]</column>
+            <column>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='background-color' value='#b0db9c' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-color' value='#ff9f00' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</rows>
+        <cols>[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]</cols>
+      </table>
+      <simple-id uuid='{BE9A3848-0E7D-458F-9BDC-C7577C1E398D}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style>
+        <style-rule element='parameter-ctrl'>
+          <format attr='background-color' value='#b0db9c' />
+          <format attr='border-style' value='solid' />
+          <format attr='border-color' value='#000000' />
+        </style-rule>
+      </style>
+      <size maxheight='900' maxwidth='1700' minheight='900' minwidth='1700' sizing-mode='fixed' />
+      <datasources>
+        <datasource name='Parameters' />
+      </datasources>
+      <datasource-dependencies datasource='Parameters'>
+        <column caption='stats' datatype='string' name='[Parameter 1]' param-domain-type='list' role='measure' type='nominal' value='&quot;s attack&quot;'>
+          <calculation class='tableau' formula='&quot;s attack&quot;' />
+          <members>
+            <member value='&quot;attack&quot;' />
+            <member value='&quot;defense&quot;' />
+            <member value='&quot;s attack&quot;' />
+            <member value='&quot;s defense&quot;' />
+            <member value='&quot;height&quot;' />
+            <member value='&quot;hp&quot;' />
+            <member value='&quot;speed&quot;' />
+            <member value='&quot;weight&quot;' />
+          </members>
+        </column>
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98222' id='8' param='horz' type-v2='layout-flow' w='99058' x='471' y='889'>
+            <zone h='98222' id='6' type-v2='layout-basic' w='99058' x='471' y='889'>
+              <zone h='41333' id='3' name='types of pokemon and their count' w='49529' x='50000' y='8667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='5' name='top 10 types of pokemon by stats' w='37764' x='471' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='11' name='top 10 pokemons by speed' w='24766' x='25234' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='13' name='top 10 pokemons by stop 10 pokemons by weightpeed (2)' w='49529' x='50000' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49111' id='15' name='pokemons by their everything idk' w='24763' x='471' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone custom-title='true' h='7778' id='10' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='49529' x='50000' y='889'>
+                <formatted-text>
+                  <run fontalignment='1' fontname='Sitka Text' fontsize='15'>stats</run>
+                </formatted-text>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16778' id='16' name='total pokemon' w='11765' x='38235' y='889'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='15666' id='17' name='average height' w='11765' x='38235' y='17667'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='16667' id='18' name='average weight' w='11765' x='38235' y='33333'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1950' minheight='1950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98222' id='21' param='vert' type-v2='layout-flow' w='99058' x='471' y='889'>
+                <zone fixed-size='280' h='49111' id='5' is-fixed='true' name='top 10 types of pokemon by stats' w='37764' x='471' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='143' h='16778' id='16' is-fixed='true' name='total pokemon' w='11765' x='38235' y='889'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone custom-title='true' h='7778' id='10' mode='compact' param='[Parameters].[Parameter 1]' type-v2='paramctrl' w='49529' x='50000' y='889'>
+                  <formatted-text>
+                    <run fontalignment='1' fontname='Sitka Text' fontsize='15'>stats</run>
+                  </formatted-text>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='41333' id='3' is-fixed='true' name='types of pokemon and their count' w='49529' x='50000' y='8667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='133' h='15666' id='17' is-fixed='true' name='average height' w='11765' x='38235' y='17667'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='142' h='16667' id='18' is-fixed='true' name='average weight' w='11765' x='38235' y='33333'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='15' is-fixed='true' name='pokemons by their everything idk' w='24763' x='471' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='11' is-fixed='true' name='top 10 pokemons by speed' w='24766' x='25234' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49111' id='13' is-fixed='true' name='top 10 pokemons by stop 10 pokemons by weightpeed (2)' w='49529' x='50000' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2AA5B77A-1B32-4D2C-9708-46E6A3E3B712}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='total pokemon'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <tuple-selection>
+            <tuple-reference>
+              <tuple-descriptor>
+                <pane-descriptor>
+                  <x-fields />
+                  <y-fields />
+                </pane-descriptor>
+                <columns>
+                  <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[ctd:id:qk]</field>
+                </columns>
+              </tuple-descriptor>
+              <tuple>
+                <value>1025</value>
+              </tuple>
+            </tuple-reference>
+          </tuple-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:id:ok]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AA8FFA42-B85D-41E9-9DC3-A30134EE372E}' />
+    </window>
+    <window class='worksheet' name='average height'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:height:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C09A7589-5682-4784-B2A4-C0B1738B651F}' />
+    </window>
+    <window class='worksheet' name='average weight'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:Calculation_893683109711405056:qk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:Calculation_893683109711589377:qk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:Calculation_893683109711650818:qk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:Calculation_893683109711687683:qk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:Calculation_893683109712683014:qk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{7ECC68AC-83EC-42CA-B7CA-453E6B8A20AF}' />
+    </window>
+    <window class='worksheet' name='types of pokemon and their count'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:id:ok]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{B113AF26-6219-4820-B243-71CFB90390A0}' />
+    </window>
+    <window class='worksheet' name='top 10 types of pokemon by stats'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F66BFD80-4EE9-46EE-B6CA-925A26DB4E54}' />
+    </window>
+    <window class='worksheet' name='top 10 pokemons by speed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='32'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{407D5F39-19A3-4A0E-95EC-D5C678B22599}' />
+    </window>
+    <window class='worksheet' name='top 10 pokemons by stop 10 pokemons by weightpeed (2)'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1rom35m084lzet1chyr7t05vwz3v].[sum:weight:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A6FE9668-9A44-46B0-ACFD-8C91F1C1C037}' />
+    </window>
+    <window class='worksheet' name='pokemons by their everything idk'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='compact' param='[Parameters].[Parameter 1]' type='parameter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:name:nk]</field>
+            <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{77927DEA-F03E-4174-BB89-5DCE1EA8B2FD}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='average height'>
+          <zoom type='entire-view' />
+          <selection-collection>
+            <tuple-selection>
+              <tuple-reference>
+                <tuple-descriptor>
+                  <pane-descriptor>
+                    <x-fields />
+                    <y-fields />
+                  </pane-descriptor>
+                  <columns>
+                    <field>[federated.1rom35m084lzet1chyr7t05vwz3v].[avg:height:qk]</field>
+                  </columns>
+                </tuple-descriptor>
+                <tuple>
+                  <value>12.116097560975609</value>
+                </tuple>
+              </tuple-reference>
+            </tuple-selection>
+          </selection-collection>
+        </viewpoint>
+        <viewpoint name='average weight'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='pokemons by their everything idk' />
+        <viewpoint name='top 10 pokemons by speed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top 10 pokemons by stop 10 pokemons by weightpeed (2)'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top 10 types of pokemon by stats'>
+          <zoom type='entire-view' />
+          <highlight field='[federated.1rom35m084lzet1chyr7t05vwz3v].[none:type:nk]'>
+            <bucket-selection />
+          </highlight>
+          <floating-toolbar-visibility value='2' />
+        </viewpoint>
+        <viewpoint name='total pokemon'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='types of pokemon and their count' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{9CDB0F48-1FEC-473F-B8E2-02958760746D}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='average height' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACYklEQVR4nO3VoY1CURRF0fsnISFBUQP9t0CCw1ABeAwagXlTxhd7rQqO2TnbWmsNRP3t
+      PQD2JADSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkC
+      IE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDS
+      BECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmAhM/nM7fbbX6/39zv93k8HjMj
+      ACLO5/Mcj8c5HA5zuVxm27aZEQAR7/d7Xq/XPJ/PuV6vczqd5vv9zrbWWnuPg714ANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaf8omCQIAu3cNAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='average weight' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='pokemons by their everything idk' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='top 10 pokemons by speed' width='192'>
+      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
+      AUSk/R9ERomEUyIQWwAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='top 10 pokemons by stop 10 pokemons by weightpeed (2)' width='192'>
+      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
+      o1TY55Or13np7DK57QIuJxTLhz+NqWX2aTX77Ody9IYWM+kkQ83LVMLLVq7CcKgDUO/0mZ0a
+      o5zbYWxmmW6zguXwyIdfPLPRSfJCfrzBOFHXLrGXz6D1KlTafb7x+knWrl1F86WwrTaxWPzQ
+      i9EcbgJBH9HxcUJum91CnYjXQb5usDQzDr4gIZ8bc9BhbWOL6ROnaeXXSaYyuLWjGZKJr7aR
+      jrB6OU+pZXFi/vGmw36nwe27WyyfmGMrV+LU8tKXMQp6Kp1GlUKty9xs5pl/DUI6wsSjpCVS
+      KE0ugwqlSQCE0iQAQmkSAKE0CYBQmrRECqVJS6RQmgyBhNIkAEJpEgChNAmAUJoEQChtJACl
+      /W3ubeYA0HX9uV/YtkyGhvmEFUxWbnxCuz86+Z1pPmG7J+7TwpLZYsQzGOkIu3HzDt/74Y/Y
+      uneHX1+6wZ//6E8xh0Na9Qqh8Sxh55DNfJXlpXnu3V1l6aWX2N/ZAU+IhZk0pt5j5c4asYiD
+      y9fyvPHt80RcQ8odi+mEn7XdElblPgeOSb416+bGvTxvvZr93d5tyoV97u9XePWlRTqdPka/
+      jTOYIOKF3XyRmewM29tbzMzOUi7k8UWS+FwabqeDTr1AseemsLvBN958i4DH+YIPp/iqGZkk
+      r9Hq0CxssHYwIBbycuHtX/DtP/kRhVKVD67eJhn0MBbz8av1VV5+49u8+/bP6NnjeLUWCzM/
+      4dcX3uXE8hzX7+7gj4zzyaUPsWyTyYiblRUn0dgYKZ+P7PQCQ32LbqeJDWiAobeptSwS0SCb
+      62tkFpYpF/MUdg5IxSMk/BbFapNur8Xqyh28sTEauV0cTo1EyENPN/GHx0mlJuTDL57K6CR5
+      sTBuf4ROLYeBi/HpOTLJIMVai2QiRsjvYjtXZHJ6ivWVm0xOzz5YHgxw6eJFkskYa2sbaE4P
+      iXiUYCBILOih2oNTJxcpba/jio6xt7GObRkkxlJ81tPicLhpN0q0OgPC8SQhr4ter4fX68Xt
+      sNjeO6DVbuN0e3E7NcqFfXB6cVhDtnNFXC43LoeDdqNGV3++YZRQy0hDzKdXL+JNZFme/7xp
+      6Gw2VlfYPqjxne9+B4/zkXYs2+KgUMZp9bhzd4OTr73JZCzwxXu2Ta5f+i2R2bMspGO/t9Di
+      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
+    </thumbnail>
+    <thumbnail height='192' name='top 10 types of pokemon by stats' width='192'>
+      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
+      h52tjKgD/gOKUfgdR9ZH7wAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='total pokemon' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACqUlEQVR4nO3XsWpUURRA0ZMh4RENKFpIwP//Ei2EgJ2FomChJAQNyqixmHlWBvwAM8Ve
+      q7qnO83m3nu0rus6ELU59AJwSMd/DxfXP+f3bn/IXeDe3QVwu9vP7c5riBZPINIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAm
+      ANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIg4fvXL/Pm1cu7+d3ri/n0/q0AaDh79HhOlmVmZvb73Zwsyzx5
+      dj7HB94L7sXN9dVcfvwwT8+fz8myzPbbzWw+H8/Ruq7rzMyLy+3c7tZD7wn/1a8f29lsNrOc
+      PpiZcQPQcvrw7J/ZH4A0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMA
+      aQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANL+AJLjNQ/JC2oqAAAAAElFTkSu
+      QmCC
+    </thumbnail>
+    <thumbnail height='192' name='types of pokemon and their count' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
